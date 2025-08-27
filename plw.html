@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Website</title>
+  <link rel="stylesheet" href="plw.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛍️ Product Showcase</h1>
+            <p>Discover Amazing Products From Trusted Sellers</p>
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="priceFilter">Max Price</label>
+                    <input type="number" id="priceFilter" placeholder="Enter max price">
+                </div>
+
+                <div class="filter-group">
+                    <label for="searchFilter">Search</label>
+                    <input type="text" id="searchFilter" placeholder="Search products...">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="prevBtn">← Previous</button>
+                <div class="product-counter" id="counter">1-4 of 20</div>
+                <button class="nav-btn" id="nextBtn">Next →</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+
+        <div class="no-products" id="noProducts">
+            <h3>🔍 No products found</h3>
+            <p>Try adjusting your filters or search terms</p>
+        </div>
+    </div>
+</body>
+<script src="plw.js"></script>
+</html>
